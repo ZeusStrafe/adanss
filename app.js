@@ -72,7 +72,7 @@ Voice.on("voiceStateUpdate", async(oldState, newState) => {
     }
 });
 
-Voice.login(process.env.TOKEN).catch(err => {
+Voice.login(CONFIG.TOKEN).catch(err => {
     Voice.error("An occured error while connecting to Voice client: " + err.message);
     return Voice.destroy();
 });
@@ -87,7 +87,7 @@ function playVoice(Voice) {
         const Path = Voice.staffJoined === true ? "./" + CONFIG.FILES.STAFF : "./" + CONFIG.FILES.WELCOME;
         Voice.playingVoice = true;
         Voice.voiceConnection.play(Path, {
-            volume: 50
+            volume: 1
         }).on("finish", async() => {
             Voice.playingVoice = false;
             if(Voice.staffJoined === true) return;
