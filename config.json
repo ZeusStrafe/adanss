@@ -1,10 +1,10 @@
 {
     "DEFAULTS": {
-        "AUTHORS": ["837953203197968414"],
-        "ACTIVITY_TEXT": "Welcome to Airfax",
-        "GUILD_ID": "1016743033988988948",
-        "VOICE_CHANNEL": "1042690949857423400",
-        "MIN_STAFF_ROLE": "1022873489155313804"
+        "AUTHORS": ["530763918000521228"],
+        "ACTIVITY_TEXT": "1 9 0 7",
+        "GUILD_ID": "1064252608606380143",
+        "VOICE_CHANNEL": "1066804076060356708",
+        "MIN_STAFF_ROLE": "1065631769396777032"
     },
     "FILES": {
         "WELCOME": "default_files/welcome-voice.mp3",
